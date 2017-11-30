@@ -1,0 +1,514 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!--試作版-->
+		<meta name="robots" content="noindex,nofollow,noarchive">
+
+		<title>paroli mallerte en esperanto pri loj^bano</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+		.rahunai{font-size:75% !important;}
+		.fihe{font-style: italic; text-align: right;}
+		code{background-color:#3a3a3a;}
+		.vimcu{color:gray;text-decoration:line-through;}
+		.kandi{color:gray;}
+		dt.kandi{color:#AAA;}
+		.skabasna{color:orange;}
+		.lerfu{font-family: monospaced;}
+		em{font-style: normal !important; color:orange;}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+<!--cfari-->
+<section>
+  <h1>pri loĵbano</h1>
+  <p><span class="rahunai">en mia tre mallerta esperanto</span></p>
+  <div class="fihe"><p>niftg<br/><span class="rahunai">el PJCG<br/>(la ponjboci'ogri, Japana Loĵbana Junula Grupo)</span></p></div>
+</section>
+<section>
+  <p><code>coi rodo mi'e .niftyg.</code></p>
+  <p>(Saluton al ĉiu el vi. Mi estas Niftg.)</p>
+</section>
+<section>
+  <section><h1>informo pri loĵbano</h1></section>
+  <section>
+    <ul>
+      <li><a href="http://lojban.org/">lojban.org</a></li>
+      <li><a href="http://mw.lojban.org/index.php?title=Lojban&setlang=eo">en esperanto</li>
+      <li><a href="http://mw.lojban.org/index.php?title=Lojban&setlang=ja">en la japana</a></li>
+    </ul>
+  </section>
+  <section>
+    <p>retpaĝoj de lernolibroj en la japana</p>
+    <ul>
+      <li><a href="http://guskant.github.io/kolojbo.iu/">ko lojbo .iu</a> (verkita de Guskant)</li>
+      <li><a href="http://seesaawiki.jp/hajiloji/"/>はじめてのロジバン (verkita de Cogas)</a>
+        <ul><li><a href="http://cogas.github.io/hajiloji/"/>la dua versio</a> estas plue facila</li></ul>
+      </li>
+    </ul>
+  </section>
+</section>
+<section>
+  <p>"La dua versio estas sufiĉe facila por paroli pri ĉiuj temoj en 30 minutojn", mi pensis.</p>
+  <p>Do, mi volas paroli pri la loĵbana gramatiko laŭ la dua versio de Haĵiloĵi. (Tamen, mi ne sukcesis.)</p>
+</section>
+<section>
+  <section><h1>Alfabeto por loĵbano</h1></section>
+  <section>
+    <p>en esperanto</p>
+    <dl>
+      <dt class="kandi">vokaloj:</dt><dd>a e i o u</dd>
+      <dt class="kandi">konsonantoj:</dt><dd>b c ĉ d f g ĝ h ĥ j ĵ k l m n p r s ŝ t ŭ v z</dd>
+    </dl>
+  </section>
+  <section><p>en loĵbano</p>
+    <dl>
+      <dt class="kandi">vokaloj:</dt><dd >a e i o u <em class="skabasna">y</em></dd>
+      <dt class="kandi">konsonantoj:</dt><dd>b <span class="vimcu">c</span> <span class="vimcu">ĉ</span> d f g <span class="vimcu">ĝ</span> <em class="skabasna">'</em> <em class="skabasna">x</em> <span class="kandi">i</span> <em class="skabasna">j</em> k l m n p r s <em class="skabasna">c</em> t <span class="kandi">u</span> v z</dd>
+    </dl>
+  </section>
+  <section>
+    <dl>
+      <dt><code>y</code></dt>
+      <dd><ul><li>ŝvao(曖昧母音). <abbr title="Internacia Fonetika Alfabeto">IFA</abbr>[<a href="https://upload.wikimedia.org/wikipedia/commons/d/d9/Mid-central_vowel.ogg"/>ə</a>]</li>
+              <li>"kuseno" por konsonantoj
+              <ul><li>(e. <code>sed<em>y</em>kre</code>, <code>pas<em>y</em>skaci</code>, <code>cak<em>y</em>respa</code>)</li></ul></li>
+              <li>intermetita sono por malhelpi silenton (simile al interjekcio "e"?)
+              <ul><li><code>y y y i mi y i mi prami y do</code> ("E..e..e..mi..e.. mi amas..e..vin.")</li></ul>
+</li></ul>
+      </dd>
+      <dt><code>'</code>(apostrofo)</dt>
+      <dd><ul><li>preskaŭ ĉiufoje sonas same kiel H</li>
+              <li>aperas inter vokaloj (e. <code>co<em>'</em>o</code> <code>pensi<em>'</em>u</code>)</dd>
+    </dl>
+  </section>
+  <section>
+    <p><code>.</code>(punkto) kaj <code>,</code>(komo)</p>
+    <ul>
+      <li><code>.</code> estas litero por paŭzo. Kutime antaŭ vokalo.
+        <ul><li><code>.i</code>, <code>.u'i</code>, <code>la .lojban.</code></li></ul>
+      </li>
+      <li><code>,</code> estas litero por disigi silabojn. Kutime por malhelpi diftongon(二重母音).
+        <ul><li><code>me,in</code>, <code>mn,r,l</code></li></ul>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <p>diftongo(二重母音)</p>
+    <ul>
+      <li>Loĵbana diftongoj <code>ia</code> sonas same kiel "ja". Sed <code>ia</code> mem estas unu diftongo, kvankam "ja" estas duopo de konsonanto "j" kaj vokalo "a".</li>
+      <li>(Tia rilato ekzistas ankaŭ inter <code>ai</code> kaj "aj")</li>
+    </ul>
+  </section>
+</section>
+<section>
+  <section><h1>Vortoj kaj akcento</h1></section>
+  <section>
+    <p>Tri tipo de formo de loĵbana vorto</p>
+    <dl>
+      <dt>"brivla" (vorto por "predikato"(述語) (kiu poste klariĝos))</dt>
+        <dd>havas opon de konsonantoj en la antaŭa parto</dd>
+        <dd>la lasta litero estas vokalo.</dd>
+        <dd>e. <code><em>kl</em>ama</code>, <code>ge<em>nt</em>ufa</code>, <code>mi'a<em>rp</em>e'u</code></dd>
+      <dt>"cmavo" (vorto por gramatika strakturo)</dt>
+        <dd>ne povas havi konsonanton krom la unua litero</dd>
+        <dd>la lasta litero estas vokalo.</dd>
+        <dd>e. <code>.ui</code>, <code>lo</code>, <code>coi</code>, <code>ka'ai</code></dd>
+      <dt>"cmene" (vorto por nomo)</dt>
+        <dd>la lasta litero estas konsonanto.</dd>
+        <dd>e. <code>volapy<em>k</em></code>, <code>esperanto<em>n</em></code>, <code>iokoxama<em>s</em></code></dd>
+    </dl>
+  </section>
+  <section>
+    <ul><li><p>Akcento estas ofte antaŭlasta same kiel esperanto.</p>
+      <ul><li><p>Por cmavo, akcento ne estas nepra. Eble, ne uzi akcenton estas pli bone, ĉar tio preventas eraron de aŭdado.</p></li>
+          <li><p>Por cmene, oni povas akcenti ĉiun silabon, ĉar ĝi estas aparta de aliaj vortoj pro paŭzo(<code>.</code>) en komenco kaj fino.</p></li></ul>
+    </li>
+    <li><p>ekzemplo: <code>kl<em>a</em>ma</code>, <code>gent<em>u</em>fa</code>, <code>.iok<em>o</em>x<!--em-->a<!--/em-->m<!--em-->a<!--/em-->s.</code></p>
+    </li></ul>
+  </section>
+  <section>
+    <p><code>.aimikl<em>a</em>malock<em>a</em>nagi'es<em>i</em>pnab<em>i</em>nxoco'orok<em>a</em>nsa</code></p>
+    <div class="fragment"><p>↓<p>
+    <p>tra sintaksa analizo de komputilo aŭ homo</p></div>
+    <div class="fragment"><p>↓</p>
+      <p><code>.ai mi klama lo ckana gi'e sipna binxo co'o ro kansa</code></p></div>
+  </section>
+</section>
+<section>
+  <section><h1>Baza strakturo de frazo</h1><p>文の基本的構造</p></section>
+  <section><p>"argumento" kaj "predikato"</p><p>「項」と「述語」</p></section>
+  <section>
+    <p>Ekzemplo de "transitiva rilato" (「推移律」)</p>
+    <ul>
+      <li>Vi estas pli granda ol mi</li>
+      <li>Mi estas pli granda ol tiu knabo</li>
+      <li>Do, vi estas pli granda ol tiu knabo</li>
+    </ul>
+  </section>
+  <section>
+    <ul>
+    <li>A estas pli granda ol B</li>
+    <li>B estas pli granda ol C</li>
+    <li>Do, A estas pli granda ol C</li>
+    </ul>
+  </section>
+  <section>
+    <ul>
+    <li>estas-pli-granda-ol(A,B)</li>
+    <li>estas-pli-granda-ol(B,C)</li>
+    <li>Do, estas-pli-granda-ol(A,C)</li>
+    </ul>
+    <p>En la ĵusa ekzemplo,</p>
+    <ul>
+    <li>"estas-pli-granda-ol" estas "predikato"(述語) kaj nepras 2 argumentojn.</li>
+    <li>A, B kaj C estas "argumentoj"(項)</li>
+    </ul>
+  </section>
+  <section>
+    <dl>
+    <dt><code>bramau</code> (kun maksimume 4 argumentoj):</dt>
+    <dd>x1 estas pli granda ol x2 (laŭ eco/dimenso(j) x3 en kvanto x4)</dd>
+    </dl>
+  </section>
+  <section>
+    <ul>
+    <li><code>.i abu bramau by</code>
+    <li><code>.i by bramau cy</code>
+    <li><code>.i ja'o abu bramau cy</code>
+    </ul>
+  </section>
+  <section>
+    <ul><li><code>pinxe</code> (kun maksimume 3 argumentoj): x1 trinkas trinkaĵon x2 el ujo x3
+      <ul><li>e. <code>la sokrates cu pinxe lo vindu</code>: Sokrato trinkas venon (el iu)</li></ul>
+    </li>
+    <li><code>klama</code> (kun maksimume 5 argumentoj): x1 venas/iras al x2 el x3 tra x4 per x5
+      <ul><li>e. <code>mi klama la .iokoxamas. lo mi zdani</code>: Mi venas al la Jokohama el mia domo</li></ul>
+    </li></ul>
+  </section>
+</section>
+<section>
+  <section>
+  <dl>
+  <dt><code>.i</code></dt><dd>komenco de loĵbana frazo</dd>
+  <dt><code>zo'e</code></dt><dd>nespecifan argumenton (kuntekste klara aŭ nuntempe ne grava); "iu";</dd>
+  </dl>
+  </section>
+  <section>
+    <p><code>zo'e</code> kutime malaperas kiam la loko de ĝi estas klara (e. la 1-a argumento antaŭ predikato, lastaj argumentoj)</p>
+    <ul>
+      <li><code>.i <em>zo'e</em> klama ti <em>zo'e</em></code> → <code>.i klama ti</code></li>
+      <li><code>.i zo'e ti klama <em>zo'e</em></code> → <code>.i zo'e ti klama</code></li>
+    </ul>
+  </section>
+  <section>
+    <p>ekzemploj</p>
+    <ul>
+      <ul>
+        <li><code>.i ti blabi .i ti xekri</code>: Ĉi tiu estas blanka. Ĉi tiu estas nigra.</li>
+        </li>
+      </ul>
+      <ul>
+        <li><code>ti tcadu .i ta karce .i mi klama ti zo'e zo'e ta</code>
+          <ul><li>Ĉi tiu estas urbo. Tiu estas aŭto. Mi venas al ĉi tiu de iu tra iu per tiu.</li></ul>
+          <ul class="fragment">
+            <li><pre>tcadu: x1 estas urbo de metropolo x2, en politika unuo x3,
+       servanta postregionon/regionon x4</pre></li>
+            <li><pre>karce: x1 estas aŭto por porti ion x2, pelita de x3</pre></li>
+            <li><pre>klama: x1 venas/iras al x2 el x3 tra x4 per x5</pre></li>
+          </ul>
+        </li>
+      </ul>
+    </ul>
+  </section>
+</section>
+<section>
+  <section>
+  <dl>
+  <dt>tanru</dt><dd>vica aro de predikatoj</dd>
+  </dl>
+  <p>simila al "adjektivo kaj substantivo" kaj "adverbo kaj verbo"?</p>
+  </section>
+  <section>
+    <p>ekzemploj</p>
+    <dl>
+      <dt>blanu</dt><dd>x1 estas blua</dd>
+      <dt>mlatu</dt><dd>x1 estas kato de speco/raso x2</dd>
+    </dl>
+  </section>
+  <section>
+    <ul>
+      <li class="fragment"><code>blanu karce</code>
+        <ul><li class="fragment"><code>blanu</code><span class="fragment"> → <code>karce</code></span></li></ul>
+      </li>
+      <li class="fragment"><code>blanu karce klama</code>
+        <ul><li class="fragment">(<code>blanu</code><span class="fragment"> → <code>karce</code>)</span><span class="fragment"> → <code>klama</code></span></li></ul>
+      </li>
+      <li class="fragment"><code>blanu karce klama mlatu</code>
+        <ul><li class="fragment">((<code>blanu</code><span class="fragment"> → <code>karce</code>)</span><span class="fragment"> → <code>klama</code>)</span><span class="fragment"> → <code>mlatu</code></span></li></ul>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <p>tanru-o indikas tre malrigora rilaton inter modifanto kaj modifato, kiel "Y, kiu rilatas X" aŭ "X-a Y"</p>
+    <ul>
+      <li class="fragment"><code>blanu karce</code>
+        <ul>
+          <li class="fragment">"aŭto, kiu rilatas al blueco"</li>
+          <li class="fragment">aŭto, kies eksteraĵo estas blua?</li>
+          <li class="fragment">aŭto, kiu kuras sur blua vojo?</li>
+          <li class="fragment">aŭto, posedanto de kiu surhavas bluan veston? ktp.</li>
+        </ul>
+      </li>
+    </ul>
+    <p class="fragment">En ordinara kunteksto, interpretu ordinare.</p>
+  </section>
+  <section>
+    <p>Parenteze, per vorto <code>ke</code> aŭ <code>bo</code>, oni povas ŝanĝi ordon de modifo jene.</p>
+    <ul>
+      <li><code>((blanu -> (karce -<em>bo</em>-> klama)) -> mlatu)</code>: blue aŭto-venanta kato?</li>
+      <li><code>(blanu -<em>ke</em>-> ((karce -> klama) -> mlatu))</code>: aŭte venanta kato, kiu estas blua?</li>
+    </ul>
+  </section>
+  <section>
+    <p>En tanru-o, strukturo de argumenta loko estas sama kiel lasta predikato de tanru-o.</p>
+    <ul>
+      <li><code>ti blanu karce mi</code>: Tio estas blua aŭto por porti min
+        <ul><li><code>karce</code>: x1 estas aŭto por porti iun x2 (pelita de x3)</li></ul>
+      </li>
+      <li><code>ti blanu karce klama mi</code>: Tiu "blu-aŭte" venas al mi
+        <ul><li><code>klama</code>: x1 venas/iras al x2 el x3 tra x4 per x5</li></ul>
+      </li>
+    </ul>
+  </section>
+</section>
+<section>
+  <section><h1>"artikolo"("冠詞")</h1></section>
+  <section>
+    <p>vorto <code>lo</code> ŝanĝas predikaton al argumenton jene:</p>
+    <p><code>ninmu</code>: x1 estas virino</p>
+    <ul>
+    <li><code>mi ninmu</code>: Mi estas virino.</li>
+    <li><code>lo ninmu ku</code>: Iu, kiu estas virino; virino.
+    </ul>
+    <p><code>citka</code>: x1 manĝas ion x2</p>
+    <ul>
+    <li><code>mi citka</code>: Mi manĝas (iun).</li>
+    <li><code>lo citka ku</code>: Iu, kiu manĝas (iun); manĝanto.
+    </ul>
+  </section>
+  <section>
+    <dl>
+    <dt><code>lo</code></dt><dd>ĝenerala "artikolo"; metite antaŭ predikato, ĝi indikas iun, kiu estas x1 de la predikato</dd>
+    <dt><code>ku</code></dt><dd>"finilo"; ĝi finigas la strakturon de argumento, kiel "ferma krampo" de la "artikolo"</dd>
+    </dl>
+    <p><code>{lo "predikato" ku}</code></p>
+  </section>
+  <section>
+    <p>ekzemploj:</p>
+    <ul>
+    <li><code>lo ninmu ku nelci lo mlatu ku</code>: iu, kiu estas virino, s^atas iun, kiu estas kato; (iu) virino s^atas (iun) katon
+      <ul><li><code>nelci</code>: x1 ŝatas iun(x2)</li></ul>
+    </li>
+    <li>oni povas ŝanĝi ankaŭ tanru-on al argumento: <p><code>lo blanu mlatu ku</code> (e. blua kato)</p></li>
+    </ul>
+  </section>
+  <section><h2>ete aliigi predikaton por fari diversajn argumentojn</h2><p>多樣な項を作るために述語を少し變化させる</p></section>
+  <section>
+    <p>interŝango de lokoj de argumentoj (項位置の交換)</p>
+    <ul>
+      <li><code>dunda</code>: x1 donas donitaĵon x2 al ricevanto x3</li>
+      <li><code>se dunda</code>: <em>x2</em> donas donitaĵon <em>x1</em> al ricevanto x3</li>
+      <li><code>te dunda</code>: <em>x3</em> donas donitaĵon x2 al ricevanto <em>x1</em></li>
+    </ul>
+    <p>en formo de frazo kaj argumento:</p>
+    <ul>
+      <li><code>mi te dunda ti do</code> Al mi donas tiun vi.</li>
+      <li><code>lo te dunda ku</code> Iu, al kiu donas iun iu; donitaĵo</li>
+    </ul>
+    <p>(<code>ve</code> por elpreni x4, <code>xe</code> por elpreni x5)</p>
+  </section>
+  <section>
+    <p>alligo de argumentoj en lokojn (項を結びつける)</p>
+    <ul>
+      <li><code>dunda</code>: x1 donas donitaĵon x2 al ricevanto x3</li>
+      <li><code>dunda be ti</code>: x1 donas donitaĵon <em>tiu</em> al ricevanto <em>x2</em></li>
+      <li><code>dunda be ti bei mi</code>: x1 donas donitaĵon <em>tiu</em> al ricevanto <em>mi</em></li>
+    </ul>
+    <p>en formo de frazo kaj argumento:</p>
+    <ul>
+      <li><code>do dunda be ti bei mi</code> Vi donas tiun al mi.</li>
+      <li><code>lo dunda be ti bei mi ku</code> Iu, kiu donas tiun al mi</li>
+    </ul>
+  </section>
+  <section>
+    <p>sen <code>be</code>, predikato inter <code>lo</code> kaj <code>ku</code> ne povas sekvigas iu ajn argumenton. Do, <code>ku</code> ne estas nepra antaŭ argumento.</p>
+    <ul>
+    <li><code>lo ninmu ku klama lo tcadu <em>ku</em> lo zdani <em>ku</em> lo zarci <em>ku</em> lo karce <em>ku</em></code></li>
+    <li><code>lo ninmu ku klama lo tcadu lo zdani lo zarci lo karce</code></li>
+    </ul>
+    <p>en kelkaj kazoj, oni povas forigi vortojn de "ferma krampo"
+  </section>
+</section>
+<section>
+  <section><h1>"etikedo" ("タグ")</h1></section>
+  <section>
+    <p>montri lokojn de argumentoj (項位置の明示)</p>
+    <p><code>fa</code> por x1, <code>fe</code> por x2, <code>fi</code> por x3, <code>fo</code> por x4, <code>fu</code> por x5</p>
+    <ul>
+    <li><code>fe ti (=x2) fi ta (=x3) klama</code> = <code>klama ti ta</code></li>
+    <li><code>klama zo'e zo'e zo'e ti</code> = <code>klama fu ti (=x5)</code></li>
+    </ul>
+  </section>
+  <section>
+    <p>"tenso" de tempo kaj spaco (時間と空間の"時制")</p>
+    <p>ekzemploj de "tempo-etikedo"</p>
+    <ul><li><code>ca</code>: nuno</li><li><code>pu</code>: estinteco</li><li><code>ba</code>: estonteco</li></ul>
+    <p>ekzemploj de "spaco-etikedo"</p>
+    <ul><li><code>ca'u</code>: antaŭo</li><li><code>ri'u</code>: dekstro</li><li><code>zu'a</code>: maldekstro</li></ul>
+  </section>
+  <section>
+    <p>ekzemploj de "tempo-etikedo"</p>
+    <ul>
+      <li><code>mi ca citka</code>: Mi manĝas</li>
+      <li><code>mi pu citka</code>: Mi manĝis</li>
+      <li><code>mi ba citka</code>: Mi manĝos</li></ul>
+    <p>ekzemploj de "spaco-etikedo"</p>
+    <ul>
+      <li><code>mi ca'u citka</code>: Mi antaŭe manĝas</li>
+      <li><code>mi ri'u citka</code>: Mi dekstre manĝas</li>
+      <li><code>mi zu'a citka</code>: Mi maldekstre manĝas</li>
+    </ul>
+  </section>
+  <section>
+    <p>ekzemploj de "tempo-etikedo"</p>
+    <ul>
+      <li><code>mi citka ca lo cerni</code>: Mi manĝas en mateno</li>
+      <li><code>mi citka pu lo cerni</code>: Mi manĝas antaŭ mateno</li>
+      <li><code>mi citka ba lo cerni</code>: Mi manĝas post mateno</li></ul>
+    <p>ekzemploj de "spaco-etikedo"</p>
+    <ul>
+      <li><code>mi citka ca'u do</code>: Mi manĝas antaŭ vi</li>
+      <li><code>mi citka ri'u do</code>: Mi manĝas en la dekstra de vi  </li>
+      <li><code>mi citka zu'a do</code>: Mi manĝas en la maldekstra de vi </li>
+    </ul>
+  </section>
+  <section>
+    <p>Rimarku: sen "tempo-etikedo", <code>mi citka</code> indikas neniun pri tempo de okazo</p>
+    <p>タグ無しの場合、時制についての情報は何ら示されない</p>
+  </section>
+</section>
+<section>
+  <section><h1>"abstraktilo"("抽象詞")</h1></section>
+  <section><p>ekzemplo de "abstraktilo"</p>
+  <dl>
+    <dt><code>nu</code> [frazo] <code>kei</code></dt>
+    <dd>x1 estas okazo de [frazo]</dd>
+  </dl></section>
+  <section>
+    <ul>
+      <li><code>zo'e nu mi citka lo plise ku kei</code>: io estas okazo de tio; mi manĝas pomon</li>
+      <li><code>lo nu mi citka lo plise ku kei</code>: okazo de tio; mi manĝas pomon</li>
+      <li><code>mi klama ti ca lo nu mi citka lo plise</code>: mi venas al tiu kiam mi manĝas pomon</li>
+    </ul>
+  </section>
+</section>
+<section>
+  <section><h1>relativa frazo</h1></section>
+  <section>
+    <p>ekzemplo de relativa frazo</p>
+    <ul>
+    <li class="fragment"><code>mi citka lo plise</code>: mi manĝas pomon</li>
+    <li class="fragment"><code>mi citka <em>ke'a</em></code></li>
+    <li class="fragment"><code><em>poi</em> mi citka ke'a <em>ku'o</em></code></li>
+    </ul>
+    <p class="fragment"><code>lo plise poi mi citka ke'a ku'o</code>: pomo, kiun mi manĝas</p>
+    <p class="fragment"><code>lo plise poi citka ku'o</code> = <code>lo plise poi ke'a citka ku'o</code>: pomo, kiu manĝas</p>
+  </section>
+</section>
+<section>
+  <section><h1>demando kaj ordono</h1></section>
+  <section>
+    <dl>
+      <dt>ma</dt><dd>demando pri argumento; "kio estas argumento metota en tiu loko?"</dd>
+      <dt>ko</dt><dd>ordono pri argumento; "faru tiun frazon vere kiel vi estas tiu argumento"</dd>
+    </dl>
+    <ul>
+      <li><code>do klama ti ma</code>: Kio estas iu, el kiu vi al tiu venas?; El kiu venas vi al tiu?</li>
+      <li><code>mi nelci ko</code>: Estu iu, kiun mi ŝatas.</li>
+    </ul>
+  </section>
+</section>
+<section>
+  <section><h1>vortoj por sentoj</h1></section>
+  <section>
+    <dl><dt><code>.ui</code></dt><dd>indikas feliĉa sento de la parolanto</dd></dl>
+    <ul>
+    <li><code>.i .ui do klama</code>: vi venas (mi estas feliĉa pri tio)</li>
+    <li><code>.i do .ui klama</code>: vi venas (mi estas feliĉa pri do precipe)</li>
+    </ul>
+  </section>
+</section>
+<section>
+  <section><h1>vortoj por vokativo</h1></section>
+  <section>
+    <dl><dt><code>doi</code></dt><dd>vorto por vokativo(呼格). sekvigas argumento aŭ predikato aŭ "cmene"</dd></dl>
+    <p><code>doi lo mlatu</code> <code>doi plise</code> <code>doi .esperantiston.</code></p>
+  </section>
+</section>
+<section>
+  <section>retlisto</section>
+  <section>
+    <p>en kelkaj lingvoj (ĉefe en la angla kaj la loĵbana): <a href="https://groups.google.com/forum/#!forum/lojban">lojban</a>, <a href="https://groups.google.com/forum/#!forum/lojban-beginners">lojban-beginners</a></p>
+    <p>en la japana: <a href="https://groups.google.com/forum/#!forum/lojban-soudan">lojban-soudan</a>, <a href="http://groups.google.com/group/ponjo_lojbo_citno_girzu">ponjo_lojbo_citno_girzu</a></p>
+  </section>
+</section>
+<section>
+  <p><code>mu'o</code></p>
+  <p>mia parolo finiĝis.</p>
+</section>
+<!--tolcfa-->
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+                                transition: 'none',
+                                progress: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
